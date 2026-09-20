@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #222222;
+    background-color: #f4f4f9;
+}
+
+/* Enlace "Saltar al contenido principal" para accesibilidad */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000000;
+    color: #ffffff;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+header {
+    background-color: #333333;
+}
+
+/* Requisito: Cambiar el elemento nav para que use inline-block y tenga un ancho del 80% */
+nav {
+    background-color: #555555;
+    display: inline-block;
+    width: 80%;
+}
+
+/* Requisito: Selector descendente para la imagen dentro de nav (ancho del 10%) */
+nav img {
+    width: 10%;
+}
+
+main {
+    background-color: #f2f2f2;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #333333;
+}
+
+/* Requisito: Comentar el estilo existente para el elemento li */
+/*
+li {
+    display: inline-block;
+    width: 150px;
+}
+*/
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* --- REQUISITOS DE CSS GRID Y FLEXBOX --- */
+
+/* Requisito: Clase grid con rejilla de 2 columnas de ~40% cada una, alineación y espacios */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* Requisito: Selector descendente para estilizar solo imágenes dentro de la clase .grid al 100% */
+.grid img {
+    width: 100%;
+}
+
+/* Requisito: Clase flex con propiedades flex-wrap y justify-content */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
